@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{admin/layout/default}">
+	<th:block layout:fragment="content-header">
+		<div class="content-header">
+			<div>
+				<h2 class="content-title card-title" th:text="${title}"></h2>
+				<p>Whole data about your business here</p>
+			</div>
+			<div>
+				<a href="#" class="btn btn-primary"><i
+					class="text-muted material-icons md-post_add"></i>Create report</a>
+			</div>
+		</div>
+	</th:block>
+	<th:block layout:fragment="content-body">
+		<div class="row">
+			<div class="col">
+				<div class="h5">회원목록화면</div>
+			</div>
+		</div>
+	</th:block>
+	<!--/* 사용자 추가 js file */-->
+    <th:block layout:fragment="customJsResource"></th:block>
+    <!--/* 사용자 추가 js script */-->
+    <th:block layout:fragment="customJs">
+    	<script>
+    		
+    	</script>
+    </th:block>
+	
+</html>
